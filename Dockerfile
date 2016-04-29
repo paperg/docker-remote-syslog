@@ -16,7 +16,7 @@ RUN apt-get update &&\
     apt-get clean
 
 # install remote_syslog2
-RUN wget https://github.com/papertrail/remote_syslog2/releases/download/v0.13/remote_syslog_linux_amd64.tar.gz &&\
+RUN wget https://github.com/papertrail/remote_syslog2/releases/download/v0.17/remote_syslog_linux_amd64.tar.gz &&\
     tar -zxf remote_syslog_linux_amd64.tar.gz &&\
     mv /remote_syslog/remote_syslog /usr/local/bin/ &&\
     chmod +x /usr/local/bin/remote_syslog &&\
